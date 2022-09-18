@@ -1,0 +1,31 @@
+.iconLink {
+  border-bottom: unset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  &:hover {
+    background-color: var(--color-background-btn-hover);
+  }
+  &:hover .logo {
+    opacity: 1;
+  }
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  opacity: 0.75;
+  background-size: 22px;
+  filter: var(--filter-logo);
+}
