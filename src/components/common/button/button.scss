@@ -1,0 +1,22 @@
+a.btn {
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  background-color: var(--color-background-btn);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: var(--font-bold,--font-default);
+  font-weight: bold;
+  &:hover {
+    background-color: var(--color-background-btn-hover);
+    color: var(--color-link);
+  }
+}
