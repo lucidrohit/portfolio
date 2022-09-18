@@ -1,0 +1,17 @@
+.divider {
+  opacity: var(--opacity-hr);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("./../../../assets/images/divider.svg");
+  height: 6px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  border: none;
+
+  @media (max-width: 620px) {
+    margin-bottom: 48px;
+    margin-top: 48px;
+  }
+}
