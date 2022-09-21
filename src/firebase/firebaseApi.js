@@ -34,9 +34,9 @@ export const getBlog = async (blogId) => {
   return blog.data();
 };
 
-const adminsCollectionRef = collection(db, "admins");
+// const adminsCollectionRef = collection(db, "admins");
 
-export const checkIsAdminUser = (uuid)=>{
-  const adminDocRef = doc()
-  const doc = getDoc()
-}
+// export const checkIsAdminUser = (uuid)=>{
+  // const adminDocRef = doc()
+  // const doc = getDoc()
+// }
