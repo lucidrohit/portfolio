@@ -1,0 +1,31 @@
+.blogs__blog {
+  h6 {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: var(--color-link-highlight);
+    font-family: var(--font-bold, --font-default);
+    font-weight: bold;
+
+    @media (max-width: 620px) {
+      font-size: 11px;
+    }
+  }
+  .blog__heading {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: var(--color-link-hover);
+    border-bottom: unset;
+    @media (max-width: 620px) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+  .blog__content {
+    margin-top: 10px;
+    @media (max-width: 620px) {
+      font-size: 1rem;
+      line-height: 2.2rem;
+    }
+  }
+  margin-bottom: 60px;
+}
