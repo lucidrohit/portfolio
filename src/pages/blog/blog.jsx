@@ -24,6 +24,7 @@ function Blog() {
   document.querySelector("title").innerText = "Blog - Rohit-Gupta";
   return (
     <div className="blog">
+    {console.log(blogId, blog)}
       {!loading ? (
         <div className="blog__content">
           <h1>{blog.heading}</h1>
