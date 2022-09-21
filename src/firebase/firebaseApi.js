@@ -31,6 +31,7 @@ export const getBlogs = async () => {
 export const getBlog = async (blogId) => {
   const docRef = doc(db, "blogs", blogId);
   const blog = await getDoc(docRef);
+  console.log(blog);
   return blog.data();
 };
 
