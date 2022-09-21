@@ -11,6 +11,7 @@ import {
 } from "@firebase/firestore";
 
 const blogsCollectionRef = collection(db, "blogs");
+
 const q = query(blogsCollectionRef, orderBy("date"), limit(5));
 
 export const getBlogs = async () => {
@@ -32,3 +33,10 @@ export const getBlog = async (blogId) => {
   const blog = await getDoc(docRef);
   return blog.data();
 };
+
+const adminsCollectionRef = collection(db, "admins");
+
+export const checkIsAdminUser = (uuid)=>{
+  const adminDocRef = doc()
+  const doc = getDoc()
+}
