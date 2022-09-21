@@ -1,0 +1,68 @@
+.projects {
+  &__heading {
+    margin-bottom: 16px;
+  }
+  &__tagline {
+    font-size: 1.125rem;
+    line-height: 2.566rem;
+    margin-bottom: 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      margin-bottom: 80px;
+      @media only screen and (max-width: 768px) {
+        max-width: 680px;
+      }
+      & > div {
+        max-width: 880px;
+      }
+      & > div > img {
+        margin-bottom: 40px;
+        border-radius: 8px;
+        width: 100%;
+        filter: brightness(--brightness-image);
+      }
+
+      &__content {
+        max-width: 680px !important;
+        width: 100%;
+        margin: auto;
+        h2 {
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+
+  &__retired {
+    width: 100%;
+    max-width: 680px;
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    &__item {
+      h6 {
+        font-family: var(--font-bold, --font-default);
+        font-weight: bold;
+        color: var(--color-heading);
+        font-size: 1rem;
+        line-height: 1.602rem;
+      }
+    }
+  }
+}
+
+.arrow {
+  margin-left: 8px;
+  width: 14px;
+  opacity: 0.7;
+}

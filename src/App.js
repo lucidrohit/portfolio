@@ -23,7 +23,6 @@ function App() {
               <Route path=":blogId" element={<Blog />} />
             </Route>
             <Route path="/projects" element={<Projects />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path="/not-found" element={<ErrorRoute />} />
             <Route path="/*" element={<Navigate to="/not-found" replace />} />
           </Route>
