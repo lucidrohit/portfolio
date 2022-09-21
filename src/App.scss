@@ -1,3 +1,109 @@
-.App{
-    
+.darkTheme {
+  --color-background: #111111;
+  --color-heading: #eaeaea;
+  --color-text: #b1b1b1;
+  --color-link: #d9d9d9;
+  --color-link-highlight: #6c6c6c;
+  --color-link-hover: #8153e2;
+  --color-link-highlight-hover: #8153e266;
+  --color-background-btn: #242424;
+  --color-background-btn-hover: #262626;
+  --color-border: #363636;
+  --color-border-bottom: #6c6c6c;
+  --color-background-link: #2e2e2e;
+  --color-background-card: #191919;
+  --color-border-card: #eaeaea;
+  --color-nav-text-active: #f6f6f6;
+  --color-background-nav: rgba(17, 17, 17, 0.8);
+  --color-nav-background-active: #2e2e2e;
+  --color-card-background-hover: #1e1e1e;
+  --color-card-border: #242424;
+  --filter-logo: invert(100%);
+  --opacity-hr: 0.3;
+  --color-card: #b1b1b1;
+  --brightness-image: 0.75;
+}
+
+.lightTheme {
+  --color-background: #ffffff;
+  --color-heading: #111111;
+  --color-text: #363636;
+  --color-link: #363636;
+  --color-link-highlight: #6c6c6c;
+  --color-link-hover: #8153e2;
+  --color-link-highlight-hover: #8153e266;
+  --color-background-btn: #fafafa;
+  --color-background-btn-hover: #f6f6f6;
+  --color-border-btn-hover: #d9d9d9;
+  --color-border: #eaeaea;
+  --color-border-bottom: #d9d9d9;
+  --color-background-link: #2e2e2e;
+  --color-background-card: #fafafa;
+  --color-border-card: #eaeaea;
+  --color-nav-text-active: #242424;
+  --color-background-nav: rgba(255, 255, 255, 0.8);
+  --color-nav-background-active: #f6f6f6;
+  --color-card-background-hover: #f7f7f7;
+  --color-card-border: #eaeaea;
+  --color-card: #6c6c6c;
+  --filter-logo: unset;
+  --opacity-hr: 1;
+  --brightness-image: unset;
+}
+
+h1 {
+  color: var(--color-heading);
+  font-size: 3.653rem;
+  line-height: 5.202rem;
+
+  @media (max-width: 620px) {
+    font-size: 1.802rem;
+    line-height: 2.566rem;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 2.566rem;
+  margin-bottom: 26px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  border-bottom: 3px solid var(--color-border-bottom);
+  &:hover {
+    color: var(--color-link-hover);
+    border-bottom-color: var(--color-link-highlight-hover);
+  }
+}
+
+h2 {
+  color: var(--color-heading);
+  font-size: 1.802rem;
+  line-height: 2.566rem;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding-bottom: 96px;
+}
+.mainContent {
+  margin: auto;
+  max-width: 900px;
+  padding-top: 144px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @media only screen and (max-width: 620px) {
+    overflow-x: hidden;
+    margin-top: 24px;
+    margin-left: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: unset;
+  }
 }

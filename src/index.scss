@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "MonoLisa-Regular";
+  src: local("./assets/fonts/monolisa-regular.woff2") format("woff2"),
+    var(--font-default);
+  font-display: swap;
+}
+@font-face {
+  font-family: "MonoLisa-Bold";
+  src: local("./assets/fonts/monolisa-bold.ttf") format("ttf"),
+    var(--font-default);
+  font-weight: bold;
+  font-display: swap;
+  font-style: bold;
+}
+
+:root {
+  --font-default: "Fira Code", monospace;
+  --font-regular: "MonoLisa-Regular";
+  --font-bold: "MonoLisa-Bold";
+  --color-section: #0032e44d;
+}
+
+::selection {
+  background-color: var(--color-section);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-regular, --font-default);
+  line-height: 1.9rem;
+  font-size: 14px;
+  background-color: var(--color-background);
+  // cursor: url("./assets/images/cursor.png"), default;
+}
+
+a {
+  // cursor: url("./assets/images/cursor-hover.png"), url("./assets/images/cursor.png"), default !important;
+}

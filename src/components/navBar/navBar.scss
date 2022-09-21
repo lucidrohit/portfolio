@@ -1,0 +1,108 @@
+.navBar {
+  z-index: 1;
+  height: 72px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: var(--color-background-nav);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--color-border);
+  position: fixed;
+  top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__logo {
+    &-link {
+      border-bottom: unset;
+      display: inline-block;
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      width: 100px;
+      height: 78px;
+      background-size: 100px;
+      color: var(--color-link);
+      filter: var(--filter-logo);
+      background-image: url(./../../assets/images/logo.svg);
+      transition: scale 0.25s ease-in-out;
+      &:hover{
+        scale: 1.05;
+        
+      }
+      @media (max-width: 620px) {
+        width: 75px;
+        background-size: 75px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #e39600, #ea4c89, #8f48eb, #1da1f2);
+    @media (max-width: 620px) {
+      height: 1px;
+      top: -1px;
+    }
+  }
+
+  &__main_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    @media only screen and (max-width: 620px) {
+      flex: 1 1 auto;
+      margin-left: 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: center;
+      min-height: 36px;
+      margin-right: 2px;
+      padding-right: 24px;
+      padding-left: 24px;
+      border-radius: 4px;
+      border-bottom: unset;
+      color: var(--color-text);
+      cursor: pointer;
+      @media only screen and (max-width: 620px) {
+        flex: 1 1 auto;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+      &:hover,
+      &.active {
+        color: unset;
+        background-color: var(--color-nav-background-active);
+        color: var(--color-nav-text-active);
+      }
+      &.active {
+        font-family: var(--font-bold, --font-default);
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    top: auto;
+    bottom: 0;
+    border-bottom-width: 0;
+  }
+}
