@@ -4,17 +4,21 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
 } from "./../../../firebase/firebaseConfig";
+
+import { useAuth } from "../../../utils/authContext";
+
 function Login() {
   const authProvider = new GoogleAuthProvider();
+  const authUser = useAuth();
 
   const handleSignIn = async () => {
-    const {user} = await signInWithPopup(auth, authProvider);
-    console.log(user);
+    const { user } = await signInWithPopup(auth, authProvider);
+    await authUser.login(user);
   };
 
   return (
-    <div>
-      <button onClick={handleSignIn}>Login</button>
+    <div className="login">
+      <button onClick={handleSignIn} className="btn login_btn">Login</button>
     </div>
   );
 }
