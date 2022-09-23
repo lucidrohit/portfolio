@@ -44,7 +44,7 @@ function Blogs() {
                 <a className="blog__heading" href={`/blogs/${blog.id}`}>
                   {blog.heading}
                 </a>
-                <p className="blog__content">{blog.text}</p>
+                <p className="blog__content">{blog.tagline}</p>
               </div>
             ))}
           </div>
