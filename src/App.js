@@ -5,6 +5,8 @@ import NavBar from "./components/navBar/navBar";
 import Home from "./pages/home/home";
 import Loader from "./components/loader/loader";
 import ErrorRoute from "./components/errorRoute/errorRoute";
+import AuthProvider from "./utils/authContext";
+
 const About = lazy(() => import("./pages/about/about"));
 const Projects = lazy(() => import("./pages/projects/projects"));
 const Blogs = lazy(() => import("./pages/blogs/blogs"));
@@ -24,7 +26,16 @@ function App() {
               <Route path=":blogId" element={<Blog />} />
             </Route>
             <Route path="/projects" element={<Projects />} />
-            <Route path="/admin" element={<Admin />} />
+
+            <Route
+              path="/admin"
+              element={
+                <AuthProvider>
+                  <Admin />
+                </AuthProvider>
+              }
+            />
+
             <Route path="/not-found" element={<ErrorRoute />} />
             <Route path="/*" element={<Navigate to="/not-found" replace />} />
           </Route>
