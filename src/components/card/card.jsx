@@ -1,8 +1,8 @@
 import "./card.scss";
 
-function Card({ logo, heading, content, projectLink }) {
+function Card({ logo, heading, content, projectLink, ...rest }) {
   return (
-    <a href={projectLink} className="card">
+    <a href={projectLink} className="card" {...rest}>
       <div className="card__thumbnail">
         <img src={logo} alt={heading} />
       </div>
