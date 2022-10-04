@@ -19,9 +19,14 @@ function Projects() {
       <div className="projects__list">
         <div className="projects__list__item">
           <div className="project__image">
-            <img loading="lazy" src={project1} alt="project" />
+            <img
+              loading="lazy"
+              src={project1}
+              alt="project"
+              data-aos="fade-right"
+            />
           </div>
-          <div className="projects__list__item__content">
+          <div className="projects__list__item__content" data-aos="fade-up">
             <h2>Go Connect: Bookings</h2>
             <p>
               An online booking system for in-person or online appointments,
@@ -45,9 +50,14 @@ function Projects() {
         </div>
         <div className="projects__list__item">
           <div className="project__image">
-            <img loading="lazy" src={project2} alt="project" />
+            <img
+              loading="lazy"
+              src={project2}
+              alt="project"
+              data-aos="fade-left"
+            />
           </div>
-          <div className="projects__list__item__content">
+          <div className="projects__list__item__content" data-aos="fade-up">
             <h2>Go Connect: Bookings</h2>
             <p>
               An online booking system for in-person or online appointments,
@@ -120,7 +130,7 @@ function Projects() {
         </div>
 
         <Hr />
-        <div className="projects__retired">
+        <div className="projects__retired" data-aos="fade-up">
           <div className="heading_group">
             <h2>Graveyard</h2>
             <p>Significant projects I worked on that are now retired.</p>

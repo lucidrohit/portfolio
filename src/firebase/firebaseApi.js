@@ -10,7 +10,6 @@ import {
   limit,
   addDoc,
 } from "@firebase/firestore";
-import { async } from "@firebase/util";
 
 const blogsCollectionRef = collection(db, "blogs");
 

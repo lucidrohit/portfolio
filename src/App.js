@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import "./App.scss";
@@ -12,6 +14,8 @@ const Projects = lazy(() => import("./pages/projects/projects"));
 const Blogs = lazy(() => import("./pages/blogs/blogs"));
 const Blog = lazy(() => import("./pages/blog/blog"));
 const Admin = lazy(() => import("./pages/admin/admin"));
+
+AOS.init({duration:500, offset:"50px"});
 
 function App() {
   return (

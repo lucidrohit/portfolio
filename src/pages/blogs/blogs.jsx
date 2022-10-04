@@ -39,7 +39,7 @@ function Blogs() {
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <div className="blogs__blog">
             {blogs.map((blog) => (
-              <div className="blogs__blog" key={blog.id}>
+              <div className="blogs__blog" key={blog.id} data-aos="fade-right">
                 <h6>{blog.date}</h6>
                 <a className="blog__heading" href={`/blogs/${blog.id}`}>
                   {blog.heading}

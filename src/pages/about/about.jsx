@@ -7,10 +7,10 @@ function About() {
   return (
     <div className="about">
       <div className="about__image">
-        <img src={mine} alt="Me" loading="lazy" />
+        <img src={mine} alt="Me" loading="lazy" data-aos="fade-down"/>
       </div>
-      <div className="container">
-        <p>
+      <div className="container" >
+        <p  data-aos="fade-up">
           I’m Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           Obcaecati perspiciatis officiis, rem error quod quam ut consectetur
           rerum inventore architecto soluta sed numquam at, beatae molestias.
@@ -20,7 +20,7 @@ function About() {
           totam laboriosam sapiente. Ut perspiciatis qui culpa mollitia unde
           quos sapiente necessitatibus dolorum
         </p>
-        <p>
+        <p  data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
           doloremque dolorum similique illo consectetur sequi deserunt sint fuga
           blanditiis perspiciatis possimus explicabo aut vitae et quae
@@ -31,24 +31,24 @@ function About() {
           quia architecto, quos eaque fuga distinctio! Eius placeat, eos minima
           veritatis deleniti id cupiditate velit!
         </p>
-        <p>
+        <p  data-aos="fade-up">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,
           in! Ex sint repellendus itaque quod eos, magni, fugiat aliquam, vero
           et maxime modi cum! Odit.
         </p>
-        <p>
+        <p  data-aos="fade-up">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
           deleniti ullam nisi consectetur eaque nihil blanditiis magni ut,
           distinctio facilis, tempora voluptas minima eveniet sit inventore
           sapiente similique repellat expedita id omnis assumenda hic suscipit
           nemo? Rem dolorem eligendi repellendus.
         </p>
-        <p>
+        <p  data-aos="fade-up">
           Outside of work my hobbies include exploring new coffee places,
           playing video games, watching sci-fi shows & movies, tinkering with
           technology and taking too many photos of my cat, Pixel.
         </p>
-        <p>
+        <p  data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
           consectetur unde numquam praesentium exercitationem perferendis modi
           fugit provident iure, nulla sint voluptatem doloremque corporis,
@@ -56,61 +56,65 @@ function About() {
           facilis recusandae! Ipsam error beatae hic?
         </p>
         <Hr />
-        <h2>Work</h2>
-        <div className="about__work_list">
-          <a className="about__work_list__item" href="/">
-            <span className="content__title">WP Engine</span>
-            <div className="contact_detail">
-              <p>Senior Product Designer</p>
-              <p>2021-2022</p>
-            </div>
-          </a>
-          <a className="about__work_list__item" href="/">
-            <span className="content__title">WP Engine</span>
-            <div className="contact_detail">
-              <p>Senior Product Designer</p>
-              <p>2021-2022</p>
-            </div>
-          </a>
-          <a className="about__work_list__item" href="/">
-            <span className="content__title">WP Engine</span>
-            <div className="contact_detail">
-              <p>Senior Product Designer</p>
-              <p>2021-2022</p>
-            </div>
-          </a>
-          <a className="about__work_list__item" href="/">
-            <span className="content__title">WP Engine</span>
-            <div className="contact_detail">
-              <p>Senior Product Designer</p>
-              <p>2021-2022</p>
-            </div>
-          </a>
-          <a className="about__work_list__item" href="/">
-            <span className="content__title">WP Engine</span>
-            <div className="contact_detail">
-              <p>Senior Product Designer</p>
-              <p>2021-2022</p>
-            </div>
-          </a>
+        <div data-aos="fade-right">
+          <h2>Work</h2>
+          <div className="about__work_list">
+            <a className="about__work_list__item" href="/">
+              <span className="content__title">WP Engine</span>
+              <div className="contact_detail">
+                <p>Senior Product Designer</p>
+                <p>2021-2022</p>
+              </div>
+            </a>
+            <a className="about__work_list__item" href="/">
+              <span className="content__title">WP Engine</span>
+              <div className="contact_detail">
+                <p>Senior Product Designer</p>
+                <p>2021-2022</p>
+              </div>
+            </a>
+            <a className="about__work_list__item" href="/">
+              <span className="content__title">WP Engine</span>
+              <div className="contact_detail">
+                <p>Senior Product Designer</p>
+                <p>2021-2022</p>
+              </div>
+            </a>
+            <a className="about__work_list__item" href="/">
+              <span className="content__title">WP Engine</span>
+              <div className="contact_detail">
+                <p>Senior Product Designer</p>
+                <p>2021-2022</p>
+              </div>
+            </a>
+            <a className="about__work_list__item" href="/">
+              <span className="content__title">WP Engine</span>
+              <div className="contact_detail">
+                <p>Senior Product Designer</p>
+                <p>2021-2022</p>
+              </div>
+            </a>
+          </div>
         </div>
         <Hr />
-        <h2>About this site</h2>
-        <p className="about_the_site__tagline">
-          In case you were wondering this site is:
-        </p>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima?
-          </li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-          <li>Powered by lorem</li>
-          <li>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Laboriosam, unde.
-          </li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
+        <div data-aos="fade-up">
+          <h2>About this site</h2>
+          <p className="about_the_site__tagline">
+            In case you were wondering this site is:
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li>Powered by lorem</li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam, unde.
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
