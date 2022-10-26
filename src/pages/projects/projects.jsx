@@ -38,7 +38,7 @@ function Projects() {
               conception, wireframing, IA mapping, prototyping, detailed mockups
               through development and launch.
             </p>
-            <Button text="basekit.com">
+            <Button text="lorem.com">
               <img
                 loading="lazy"
                 src={arrow}
@@ -68,7 +68,7 @@ function Projects() {
               conception, wireframing, IA mapping, prototyping, detailed mockups
               through development and launch.
             </p>
-            <Button text="basekit.com">
+            <Button text="lorem.com">
               <img
                 loading="lazy"
                 src={arrow}
@@ -93,7 +93,7 @@ function Projects() {
               conception, wireframing, IA mapping, prototyping, detailed mockups
               through development and launch.
             </p>
-            <Button text="basekit.com">
+            <Button text="lorem.com">
               <img
                 loading="lazy"
                 src={arrow}
@@ -118,7 +118,7 @@ function Projects() {
               conception, wireframing, IA mapping, prototyping, detailed mockups
               through development and launch.
             </p>
-            <Button text="basekit.com">
+            <Button text="lorem.com">
               <img
                 loading="lazy"
                 src={arrow}
