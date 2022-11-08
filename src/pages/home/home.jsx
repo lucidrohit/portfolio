@@ -28,7 +28,7 @@ function Home() {
           applications with a focus on simplicity & usability.
         </p>
         <p>
-          I’m currently working at <a href="/">SAE Club of Nit Srinagar</a> as
+          I’m currently working at <a href="https://sae-website-five.vercel.app/">SAE Club of Nit Srinagar</a> as
           web-developer. Before that, I worked at{" "}
           <a href="https://www.zoxtro.tech/">Zoxtro.tech</a> where I helped
           shape the future of website and the business to thrive online. I also
