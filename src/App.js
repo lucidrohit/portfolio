@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import "./App.scss";
 import NavBar from "./components/navBar/navBar";
 import Home from "./pages/home/home";
@@ -15,9 +15,10 @@ const Blogs = lazy(() => import("./pages/blogs/blogs"));
 const Blog = lazy(() => import("./pages/blog/blog"));
 const Admin = lazy(() => import("./pages/admin/admin"));
 
-AOS.init({duration:500, offset:"50px"});
-
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 700, offset: "500px" });
+  },[]);
   return (
     <div className="App">
       <Suspense fallback={<Loader />}>

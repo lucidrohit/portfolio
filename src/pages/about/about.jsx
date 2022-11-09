@@ -20,7 +20,7 @@ function About() {
           totam laboriosam sapiente. Ut perspiciatis qui culpa mollitia unde
           quos sapiente necessitatibus dolorum
         </p>
-        <p  data-aos="fade-up">
+        <p  data-aos="fade-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
           doloremque dolorum similique illo consectetur sequi deserunt sint fuga
           blanditiis perspiciatis possimus explicabo aut vitae et quae
@@ -31,24 +31,24 @@ function About() {
           quia architecto, quos eaque fuga distinctio! Eius placeat, eos minima
           veritatis deleniti id cupiditate velit!
         </p>
-        <p  data-aos="fade-up">
+        <p  data-aos="fade-right">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,
           in! Ex sint repellendus itaque quod eos, magni, fugiat aliquam, vero
           et maxime modi cum! Odit.
         </p>
-        <p  data-aos="fade-up">
+        <p  data-aos="fade-left">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
           deleniti ullam nisi consectetur eaque nihil blanditiis magni ut,
           distinctio facilis, tempora voluptas minima eveniet sit inventore
           sapiente similique repellat expedita id omnis assumenda hic suscipit
           nemo? Rem dolorem eligendi repellendus.
         </p>
-        <p  data-aos="fade-up">
+        <p  data-aos="fade-right">
           Outside of work my hobbies include exploring new coffee places,
           playing video games, watching sci-fi shows & movies, tinkering with
           technology and taking too many photos of my cat, Pixel.
         </p>
-        <p  data-aos="fade-up">
+        <p  data-aos="fade-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
           consectetur unde numquam praesentium exercitationem perferendis modi
           fugit provident iure, nulla sint voluptatem doloremque corporis,
