@@ -12,14 +12,16 @@ import zoxtro from "./../../assets/images/zoxtro.png";
 import xamtime from "./../../assets/images/xamtime.png";
 import Tag from "../../components/tag/tag";
 
+
+
 function Home() {
   document.querySelector("title").innerText = "Rohit-Gupta - Web Developer";
   return (
     <div className="home">
-      <h1 className="home__heading">
+      <h1 className="home__heading" data-aos="fade-right">
         Computer Science Enthusiast, trapped in learning-developing loop.
       </h1>
-      <div className="home__intro">
+      <div className="home__intro" data-aos="fade-up">
         <p>
           I’m Rohit Gupta, a India based web-developer with over three years of
           experience. I specialise in full-stack web-based technologies and
@@ -78,18 +80,20 @@ function Home() {
             logo={zoxtro}
             heading="Zoxtro.tech"
             content="A landing page for an Embroidery Anime merchandise which include a basic show case of the product and a contact form."
+            data-aos="fade-right"
           />
           <Card
             projectLink="https://www.xamtime.cf"
             logo={xamtime}
             heading="Xamtime"
             content="A standalone organised solution for the college student to manage all material like notes, pyqs, syllabus & class-links."
+            data-aos="fade-right"
           />
         </div>
       </div>
       <Hr />
 
-      <div className="home__skills">
+      <div className="home__skills" data-aos="fade-up">
         <h2>Skills</h2>
         <p>Here are some of my skills and tools with which I have worked.</p>
         <div className="home__skils__tags">
