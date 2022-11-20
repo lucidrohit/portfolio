@@ -12,10 +12,28 @@ import zoxtro from "./../../assets/images/zoxtro.png";
 import xamtime from "./../../assets/images/xamtime.png";
 import Tag from "../../components/tag/tag";
 
-
-
 function Home() {
   document.querySelector("title").innerText = "Rohit-Gupta - Web Developer";
+  const skills = [
+    "Html5",
+    "Css3",
+    "Tailwind & Bootstrap",
+    "Sass/Scss",
+    "Javascript(es6)",
+    "ReactJs",
+    "Firebase",
+    "GraphQl",
+    "ExpressJs",
+    "RESTfull APIs",
+    "server side templating(ejs)",
+    "SQL",
+    "MonogoDb",
+    "git & github",
+    "C & C++",
+    "Python",
+    "Tkinter",
+    "Flask",
+  ];
   return (
     <div className="home">
       <h1 className="home__heading" data-aos="fade-right">
@@ -28,8 +46,11 @@ function Home() {
           applications with a focus on simplicity & usability.
         </p>
         <p>
-          I’m currently working at <a href="https://sae-website-five.vercel.app/">SAE Club of Nit Srinagar</a> as
-          web-developer. Before that, I worked at{" "}
+          I’m currently working at{" "}
+          <a href="https://sae-website-five.vercel.app/">
+            SAE Club of Nit Srinagar
+          </a>{" "}
+          as web-developer. Before that, I worked at{" "}
           <a href="https://www.zoxtro.tech/">Zoxtro.tech</a> where I helped
           shape the future of website and the business to thrive online. I also
           build class-material-manager{" "}
@@ -96,24 +117,11 @@ function Home() {
       <div className="home__skills" data-aos="fade-up">
         <h2>Skills</h2>
         <p>Here are some of my skills and tools with which I have worked.</p>
+
         <div className="home__skils__tags">
-          <Tag skill="Python" />
-          <Tag skill="Tkinter" />
-          <Tag skill="Flask" />
-          <Tag skill="git & github" />
-          <Tag skill="C & C++" />
-          <Tag skill="Html" />
-          <Tag skill="Css" />
-          <Tag skill="Sass/Scss" />
-          <Tag skill="Tailwind & Bootstrap" />
-          <Tag skill="Javascript" />
-          <Tag skill="ReactJs" />
-          <Tag skill="Firebase" />
-          <Tag skill="ExpressJs" />
-          <Tag skill="SQL" />
-          <Tag skill="MonogoDb" />
-          <Tag skill="RESTfull APIs" />
-          <Tag skill="ejs" />
+          {skills.map((skill) => (
+            <Tag skill={skill} />
+          ))}
         </div>
       </div>
     </div>
