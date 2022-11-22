@@ -15,6 +15,9 @@
     line-height: 2.3rem;
     color: var(--color-link-hover);
     border-bottom: unset;
+    &:hover{
+      text-decoration: underline;
+    }
     @media (max-width: 620px) {
       font-size: 2rem;
       line-height: 2rem;
