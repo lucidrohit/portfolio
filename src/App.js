@@ -8,6 +8,7 @@ import Home from "./pages/home/home";
 import Loader from "./components/loader/loader";
 import ErrorRoute from "./components/errorRoute/errorRoute";
 import AuthProvider from "./utils/authContext";
+import Cursor from "./components/common/cursor/cursor";
 
 const About = lazy(() => import("./pages/about/about"));
 const Projects = lazy(() => import("./pages/projects/projects"));
@@ -21,6 +22,7 @@ function App() {
   },[]);
   return (
     <div className="App">
+      <Cursor/>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<NavBar />}>
