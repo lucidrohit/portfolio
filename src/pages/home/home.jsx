@@ -10,6 +10,7 @@ import Card from "../../components/card/card";
 
 import zoxtro from "./../../assets/images/zoxtro.png";
 import xamtime from "./../../assets/images/xamtime.png";
+import traway from "./../../assets/images/traway.png";
 import Tag from "../../components/tag/tag";
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
     "Sass/Scss",
     "Javascript(es6)",
     "ReactJs",
+    "Redux",
     "Firebase",
     "GraphQl",
     "ExpressJs",
@@ -42,20 +44,21 @@ function Home() {
       <div className="home__intro" data-aos="fade-up">
         <p>
           I’m Rohit Gupta, a India based web-developer with over three years of
-          experience. I specialise in full-stack web-based technologies and
-          applications with a focus on simplicity & usability.
+          experience. I'm a 19 and a half year old self-taught programmer with
+          experience in Python (Flask, Tkinter), C & CPP, web technologies such
+          as ReactJS, SASS, Redux, MongoDB, SQL, Node.js, Express.js, RESTful
+          and GraphQL APIs, and computer networks. I am currently a sophomore at
+          NIT Srinagar studying Electrical Engineering.
         </p>
         <p>
-          I’m currently working at{" "}
-          <a href="https://sae-website-five.vercel.app/">
-            SAE Club of Nit Srinagar
-          </a>{" "}
-          as web-developer. Before that, I worked at{" "}
-          <a href="https://www.zoxtro.tech/">Zoxtro.tech</a> where I helped
-          shape the future of website and the business to thrive online. I also
-          build class-material-manager{" "}
-          <a href="https://xamtime.cf">Xamtime.cf</a> and a python game{" "}
-          <a href="https://www.youtube.com/watch?v=ziggFBmAjKg">Tic-Tac-Toe</a>.
+          I have worked on several personal projects such as{" "}
+          <a href="https://examtime.onrender.com/">Xamtime.cf</a>, an organization
+          tool for college students to manage their study materials,{" "}
+          <a href="https://www.zoxtro.tech/">Zoxtro.tech</a>, an anime
+          merchandise e-commerce platform, and <a href="https://traway.live">Traway.live</a>, a bus booking platform
+          where I am a CTO and co-founder. I have also worked on the website for
+          the college club{" "}
+          <a href="https://saeindia.vercel.app/">SAE India</a>.
         </p>
       </div>
       <div className="home__links_list">
@@ -97,14 +100,21 @@ function Home() {
         <p>A collection of some side projects that have shipped recently.</p>
         <div className="home__projects_featured">
           <Card
-            projectLink="https://www.zoxtro.tech"
-            logo={zoxtro}
-            heading="Zoxtro.tech"
-            content="A landing page for an Embroidery Anime merchandise which include a basic show case of the product and a contact form."
+            projectLink="https://www.traway.live"
+            logo={traway}
+            heading="Traway.live"
+            content="Experience hassle-free bus travel with Traway - a responsive PWA with seamless booking, payment, and personalized services."
             data-aos="fade-right"
           />
           <Card
-            projectLink="https://www.xamtime.cf"
+            projectLink="https://www.zoxtro.tech"
+            logo={zoxtro}
+            heading="Zoxtro.tech"
+            content="Unleash your inner otaku with Zoxtro - a sleek ecommerce platform with seamless search, checkout, and personalized recommendations."
+            data-aos="fade-right"
+          />
+          <Card
+            projectLink="https://examtime.onrender.com/"
             logo={xamtime}
             heading="Xamtime"
             content="A standalone organised solution for the college student to manage all material like notes, pyqs, syllabus & class-links."
@@ -120,7 +130,7 @@ function Home() {
 
         <div className="home__skils__tags">
           {skills.map((skill) => (
-            <Tag skill={skill} />
+            <Tag key={skill} skill={skill} />
           ))}
         </div>
       </div>

@@ -28,13 +28,25 @@ function Blogs() {
   return (
     <div className="blogs">
       <h1 style={{ marginBottom: "20px" }}>Blogs</h1>
-      <p style={{ marginBottom: "0px" }}>
-        Hey there, Here are my new blogs about Html, Css and Js technologies.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto assumenda
-        cum veniam alias eius odit praesentium corrupti vitae facere dolorem
-        ullam est, nostrum similique rerum!
+      <p >
+        Hey there, Welcome to the blog section of my portfolio! As a self-taught
+        programmer with experience in Python, C & CPP, and various web
+        technologies. I'm excited to share my knowledge and insights with you.
       </p>
-      <Hr style={{ marginTop: "70px", marginBottom: "100px" }} />
+
+      <p>
+        In this section, you'll find a collection of blogs that cover topics
+        related to these technologies, including tutorials, tips, and best
+        practices.
+      </p>
+      <p style={{ marginBottom: "0px",}}>
+        My goal is to provide valuable content that can help you improve your
+        skills and stay up-to-date with the latest trends in the tech industry.
+        So, whether you're a beginner or an experienced programmer, I invite you
+        to join me on this journey of continuous learning and growth.
+      </p>
+
+      <Hr style={{ marginBottom: "100px" }} />
       {!loading ? (
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <div className="blogs__blog">

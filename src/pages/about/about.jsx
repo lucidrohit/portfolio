@@ -7,93 +7,56 @@ function About() {
   return (
     <div className="about">
       <div className="about__image">
-        <img src={mine} alt="Me" loading="lazy" data-aos="fade-down"/>
+        <img src={mine} alt="Me" loading="lazy" data-aos="fade-down" />
       </div>
-      <div className="container" >
-        <p  data-aos="fade-up">
-          I’m Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Obcaecati perspiciatis officiis, rem error quod quam ut consectetur
-          rerum inventore architecto soluta sed numquam at, beatae molestias.
-          Non rerum inventore maxime ducimus perferendis vero voluptatibus porro
-          consequuntur fugit tenetur reiciendis provident, consectetur officia.
-          Aliquam neque commodi illo corporis maiores omnis voluptatibus dolorem
-          totam laboriosam sapiente. Ut perspiciatis qui culpa mollitia unde
-          quos sapiente necessitatibus dolorum
+      <div className="container">
+        <p data-aos="fade-up">
+          I'm a 19 and a half year old self-taught programmer with a passion for
+          design and technology. My experience includes programming languages
+          like Python and web technologies such as ReactJS, SASS, and Node.js. I
+          specialize in building web and mobile-based applications with a focus
+          on simplicity and usability.
         </p>
-        <p  data-aos="fade-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          doloremque dolorum similique illo consectetur sequi deserunt sint fuga
-          blanditiis perspiciatis possimus explicabo aut vitae et quae
-          necessitatibus non aperiam accusamus expedita, sapiente id? Nam, ipsum
-          assumenda? Voluptatum, sapiente ut! Dolores aut mollitia voluptatem
-          iusto pariatur repudiandae tempore, quo ipsam blanditiis consequatur
-          maxime sequi itaque vitae molestias officiis excepturi cumque aperiam
-          quia architecto, quos eaque fuga distinctio! Eius placeat, eos minima
-          veritatis deleniti id cupiditate velit!
+        <p data-aos="fade-up">
+          Currently, I'm a sophomore at NIT Srinagar studying Electrical
+          Engineering. Additionally, I have worked on several personal projects,
+          including Examtime, an organization tool for college students, Zoxtro,
+          an anime merchandise e-commerce platform, and Traway, a bus booking
+          platform where I am a CTO and co-founder.
         </p>
-        <p  data-aos="fade-right">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,
-          in! Ex sint repellendus itaque quod eos, magni, fugiat aliquam, vero
-          et maxime modi cum! Odit.
+        <p data-aos="fade-up">
+          In my free time, I enjoy exploring new places, trying new foods, and
+          learning about different cultures. I also have a strong interest in
+          fitness and regularly work out at the gym.
         </p>
-        <p  data-aos="fade-left">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-          deleniti ullam nisi consectetur eaque nihil blanditiis magni ut,
-          distinctio facilis, tempora voluptas minima eveniet sit inventore
-          sapiente similique repellat expedita id omnis assumenda hic suscipit
-          nemo? Rem dolorem eligendi repellendus.
-        </p>
-        <p  data-aos="fade-right">
-          Outside of work my hobbies include exploring new coffee places,
-          playing video games, watching sci-fi shows & movies, tinkering with
-          technology and taking too many photos of my cat, Pixel.
-        </p>
-        <p  data-aos="fade-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-          consectetur unde numquam praesentium exercitationem perferendis modi
-          fugit provident iure, nulla sint voluptatem doloremque corporis,
-          tempore saepe illum veniam eveniet suscipit quae debitis! Porro nihil
-          facilis recusandae! Ipsam error beatae hic?
-        </p>
+        
         <Hr />
-        <div data-aos="fade-right">
+        <div>
           <h2>Work</h2>
-          <div className="about__work_list">
-            <a className="about__work_list__item" href="/">
-              <span className="content__title">WP Engine</span>
+          <div className="about__work_list" >
+          <a className="about__work_list__item" href="/"  data-aos="fade-right">
+              <span className="content__title">Traway</span>
               <div className="contact_detail">
-                <p>Senior Product Designer</p>
-                <p>2021-2022</p>
+                <p>Co-founder | Cto | Coo</p>
+                <p>2022 - &nbsp;&nbsp;&nbsp;&nbsp;</p>
               </div>
             </a>
-            <a className="about__work_list__item" href="/">
-              <span className="content__title">WP Engine</span>
+            <a className="about__work_list__item" href="/"  data-aos="fade-left">
+              <span className="content__title">SAE India Club</span>
               <div className="contact_detail">
-                <p>Senior Product Designer</p>
-                <p>2021-2022</p>
+                <p>Full Stack developer</p>
+                <p>2022 - &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
               </div>
             </a>
-            <a className="about__work_list__item" href="/">
-              <span className="content__title">WP Engine</span>
+            <a className="about__work_list__item" href="/" data-aos="fade-right">
+              <span className="content__title">Syndicate</span>
               <div className="contact_detail">
-                <p>Senior Product Designer</p>
-                <p>2021-2022</p>
+                <p>Web Dev Team Member</p>
+                <p>2022 - &nbsp;&nbsp;&nbsp;&nbsp;</p>
               </div>
             </a>
-            <a className="about__work_list__item" href="/">
-              <span className="content__title">WP Engine</span>
-              <div className="contact_detail">
-                <p>Senior Product Designer</p>
-                <p>2021-2022</p>
-              </div>
-            </a>
-            <a className="about__work_list__item" href="/">
-              <span className="content__title">WP Engine</span>
-              <div className="contact_detail">
-                <p>Senior Product Designer</p>
-                <p>2021-2022</p>
-              </div>
-            </a>
+        
           </div>
         </div>
         <Hr />
@@ -104,15 +67,12 @@ function About() {
           </p>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima?
+            Designed and built on a Mac using <a href="https://www.figma.com/">Figma</a> and <a href="https://www.code.visualstudio.com/">Visual Studio Code</a>.
             </li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>Powered by lorem</li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laboriosam, unde.
-            </li>
-            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Planning to shift it to <a href="https://www.nextjs.org/">NextJs</a> and use <a href="https://www.greensock.com/">GSAP</a>.</li>
+            <li>Hosted and deployment by <a href="https://www.vercel.com/">Vercel</a> and domain is managed by <a href="https://www.cloudflare.com/">Cloudflare</a>.</li>
+            <li>Powered by <a href="https://www.reactjs.org/">ReactJs</a>, Firebase and Rowy.</li>
+            <li>Set in the beautiful <a href="https://www.monolisa.dev/">Monolisa</a> typeface.</li>
           </ul>
         </div>
       </div>

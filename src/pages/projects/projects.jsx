@@ -11,8 +11,10 @@ function Projects() {
     <div className="projects">
       <h1 className="projects__heading">Projects</h1>
       <p className="projects__tagline">
-        From one page sites to the worlds first mobile sitebuilder, I’ve spent
-        years designing and building products of varying sizes. Here’s a small
+        From personal projects like Examtime and Zoxtro to co-founding and
+        serving as CTO of Traway, a bus booking platform, I've designed and
+        developed a variety of products using programming languages like Python
+        and web technologies such as ReactJS, MongoDB, and SQL. Here's a small
         selection of some of my recent projects and experiences.
       </p>
       <Hr />
@@ -27,7 +29,7 @@ function Projects() {
             />
           </div>
           <div className="projects__list__item__content" data-aos="fade-up">
-            <h2>Go Connect: Bookings</h2>
+            <h2>Zoxtro: Anime Merchandise Ecommerce</h2>
             <p>
               An online booking system for in-person or online appointments,
               designed to work standalone or alongside BaseKit Sitebuilder.
@@ -38,7 +40,7 @@ function Projects() {
               conception, wireframing, IA mapping, prototyping, detailed mockups
               through development and launch.
             </p>
-            <Button text="lorem.com">
+            <Button text="Zoxtro.tech" link="https://www.zoxtro.tech">
               <img
                 loading="lazy"
                 src={arrow}
@@ -136,24 +138,24 @@ function Projects() {
             <p>Significant projects I worked on that are now retired.</p>
           </div>
           <div className="projects__retired__item">
-            <h6>Atlas Codex</h6>
+            <h6>lorem ipsum</h6>
             <p>
-              A widely used discoveries database and companion web-app for No
-              Man’s Sky, the science fiction space exploration game.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              amet recusandae quidem enim iusto reiciendis voluptate id.
             </p>
           </div>
           <div className="projects__retired__item">
-            <h6>Atlas Codex</h6>
+          <h6>lorem ipsum</h6>
             <p>
-              A widely used discoveries database and companion web-app for No
-              Man’s Sky, the science fiction space exploration game.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              amet recusandae quidem enim iusto reiciendis voluptate id.
             </p>
           </div>
           <div className="projects__retired__item">
-            <h6>Atlas Codex</h6>
+          <h6>lorem ipsum</h6>
             <p>
-              A widely used discoveries database and companion web-app for No
-              Man’s Sky, the science fiction space exploration game.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              amet recusandae quidem enim iusto reiciendis voluptate id.
             </p>
           </div>
         </div>

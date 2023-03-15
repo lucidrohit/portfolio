@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 import "./cursor.scss";
+import { useLocation } from "react-router-dom";
 const Cursor = () => {
   const delay = 18;
-
+  const location = useLocation()
   const dot = useRef(null);
   const dotOutline = useRef(null);
 
