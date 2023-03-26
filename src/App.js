@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import "./App.scss";
 import NavBar from "./components/navBar/navBar";
 import Home from "./pages/home/home";
@@ -17,12 +17,17 @@ const Blog = lazy(() => import("./pages/blog/blog"));
 const Admin = lazy(() => import("./pages/admin/admin"));
 
 function App() {
+  const [showCursor, setShowCursor] = useState(false)
   useEffect(() => {
     AOS.init({ duration: 700, offset: "500px" });
   },[]);
+
+  useLayoutEffect(()=>{
+    if(window.innerWidth>=700) setShowCursor(true)
+  },[])
   return (
     <div className="App">
-      <Cursor/>
+      {showCursor && <Cursor/>}
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<NavBar />}>
